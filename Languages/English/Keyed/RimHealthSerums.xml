@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<ZZRH_AllowCrafting>Serums can be made at the drug lab</ZZRH_AllowCrafting>
+	<ZZRH_AllowCraftingTip>Off by default, so traders are the only source. When on, the drug lab gets a bill for every enabled serum. All of them need medicine production, Intellectual skill and advanced components. The stronger ones also need the bionic replacements research.</ZZRH_AllowCraftingTip>
+	<ZZRH_StockChanceIntro>Switch off any serum you don't want in your game. The Settings button next to a serum opens sliders for how often each trader type has it in stock, its price, treatment time, pain, discomfort and the chance of side effects. Other traders never sell the serums.</ZZRH_StockChanceIntro>
+	<ZZRH_SwitchedOff>Switched off. Never offered by traders, made or used in this game.</ZZRH_SwitchedOff>
+	<ZZRH_ShowSettings>Settings</ZZRH_ShowSettings>
+	<ZZRH_HideSettings>Hide</ZZRH_HideSettings>
+	<ZZRH_Price>Price: {0} silver ({1})</ZZRH_Price>
+	<ZZRH_Duration>Treatment time: {0} ({1})</ZZRH_Duration>
+	<ZZRH_EffectDuration>Effect lasts: {0} ({1})</ZZRH_EffectDuration>
+	<ZZRH_Days>{0} to {1} days</ZZRH_Days>
+	<ZZRH_DaysSingle>{0} days</ZZRH_DaysSingle>
+	<ZZRH_Pain>Strongest pain: {0} ({1})</ZZRH_Pain>
+	<ZZRH_PainTip>Pain lowers mood. Minor pain gives -5, serious pain -10, intense pain -15 and mind-shattering pain -20. It also dulls consciousness. At 80 % the patient passes out. Painkillers help as usual. 0 % means no pain at all.</ZZRH_PainTip>
+	<ZZRH_SideEffects>Discomfort during treatment: {0}</ZZRH_SideEffects>
+	<ZZRH_SideEffectsTip>Dizziness and nausea during the treatment. 0 % switches them off. Not being able to walk is part of every treatment and stays.</ZZRH_SideEffectsTip>
+	<ZZRH_ResetSerum>Reset {0} to defaults</ZZRH_ResetSerum>
+	<ZZRH_SideEffectsHeader>Side effects after a treatment</ZZRH_SideEffectsHeader>
+	<ZZRH_SideEffectsIntro>Switch single side effects off or change how long they last. How often they happen is set per serum below.</ZZRH_SideEffectsIntro>
+	<ZZRH_SideEffectEnabledTip>When off, this side effect never shows up. If every side effect a serum can cause is off, that serum causes none.</ZZRH_SideEffectEnabledTip>
+	<ZZRH_SideEffectDays>Lasts {0} to {1} days</ZZRH_SideEffectDays>
+	<ZZRH_SideEffectDaysSingle>Lasts {0} days</ZZRH_SideEffectDaysSingle>
+	<ZZRH_ResetSideEffects>Reset side effects to defaults</ZZRH_ResetSideEffects>
+	<ZZRH_YearsRange>Years taken off: {0} to {1}</ZZRH_YearsRange>
+	<ZZRH_MinAge>Never younger than: {0} years</ZZRH_MinAge>
+	<ZZRH_MinAgeTip>The serum never takes anyone below this biological age. A colonist must be at least one year older than this to get it. The years are rolled within the range above for each treatment and don't depend on the aging speed in the difficulty settings.</ZZRH_MinAgeTip>
+	<ZZRH_OneYear>1 year</ZZRH_OneYear>
+	<ZZRH_Years>{0} years</ZZRH_Years>
+	<ZZRH_TreatmentEnded>{0}'s {1} treatment ended early. There is nothing left to treat.</ZZRH_TreatmentEnded>
+	<ZZRH_RefundBusy>{0} is already under treatment. The {1} was put back.</ZZRH_RefundBusy>
+	<ZZRH_RefundNothing>The {1} has nothing left to treat on {0}. It was put back.</ZZRH_RefundNothing>
+	<ZZRH_BillsSuspended>{0} serum crafting bills were suspended because crafting or that serum is switched off.</ZZRH_BillsSuspended>
+	<ZZRH_BillSuspended>A serum crafting bill was suspended because crafting or that serum is switched off.</ZZRH_BillSuspended>
+	<ZZRH_AfterEffectChance>Chance of a side effect afterwards: {0}</ZZRH_AfterEffectChance>
+	<ZZRH_AfterEffectChanceTip>When the treatment is done, one side effect can show up. For this serum these are {0}. How long each one lasts is set in the side effects section. 0 % switches them off.</ZZRH_AfterEffectChanceTip>
+	<ZZRH_AfterEffectMessage>{0} has {1} as a side effect of the {2}.</ZZRH_AfterEffectMessage>
+	<ZZRH_ResetDefaults>Reset to defaults</ZZRH_ResetDefaults>
+	<ZZRH_EnabledTip>When off, no trader offers it for sale, it can't be made and nobody can be treated with it. Traders may still buy leftover doses from you.</ZZRH_EnabledTip>
+	<ZZRH_ShipChance>Exotic goods trader ships: {0}</ZZRH_ShipChance>
+	<ZZRH_CaravanChance>Exotic goods trade caravans: {0}</ZZRH_CaravanChance>
+	<ZZRH_ProsthesesChance>Prosthesis trader ships (Expanded Prosthetics and Organ Engineering): {0}</ZZRH_ProsthesesChance>
+	<ZZRH_Disabled>switched off in the mod settings</ZZRH_Disabled>
+	<ZZRH_DevFast>Dev mode: treatments finish in about 10 seconds</ZZRH_DevFast>
+	<ZZRH_DevFastTip>For testing. Only works while development mode is on. At normal game speed a treatment then takes about 10 seconds instead of days.</ZZRH_DevFastTip>
+	<ZZRH_NotForAndroids>androids can't use it</ZZRH_NotForAndroids>
+	<ZZRH_DurationTip>Applies to treatments that start after you close the settings. Treatments that are already running keep their time.</ZZRH_DurationTip>
+</LanguageData>

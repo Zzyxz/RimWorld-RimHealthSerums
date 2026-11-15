@@ -1,0 +1,1895 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingCategoryDef>
+    <defName>ZZRH_Serums</defName>
+    <label>RimHealth serums</label>
+    <parent>Manufactured</parent>
+  </ThingCategoryDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ZZRH_RegrowthSerum</defName>
+    <label>regrowth serum</label>
+    <description>A RimHealth mechanite serum for small repairs. A doctor injects it to regrow one lost nose, ear, finger or toe. The mechanites rebuild the part from the patient's own tissue over two to three days. Anything bigger is beyond them. When the work is done the body absorbs them.\n\nThe patient is in a lot of pain and can't walk until the part is back. The treatment always works.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <graphicData>
+      <texPath>Things/Item/RegrowthSerum</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.65</drawSize>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>10</stackLimit>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Mass>0.2</Mass>
+      <DeteriorationRate>2.0</DeteriorationRate>
+      <Flammability>0.2</Flammability>
+      <MarketValue>300</MarketValue>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>ZZRH_Serums</li>
+    </thingCategories>
+    <tradeability>All</tradeability>
+    <modExtensions>
+      <li Class="RimHealthSerums.SerumExtension">
+        <shipChance>0.25</shipChance>
+        <caravanChance>0.15</caravanChance>
+        <prosthesesChance>1.0</prosthesesChance>
+        <summary>Regrows a lost nose, ear, finger or toe.</summary>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ZZRH_InternalRepairSerum</defName>
+    <label>internal repair serum</label>
+    <description>A RimHealth mechanite serum for old damage inside the body. A doctor injects it into one organ, which can be the brain, the heart, a lung, a kidney, the liver, the stomach or the spine. Over four to six days the mechanites rebuild every scar in that organ. They also repair drug damage like chemical damage in the brain or kidneys and cirrhosis of the liver. When the work is done the body absorbs them.\n\nThe patient can't walk during the treatment. Work on the brain also keeps them unconscious the whole time. A missing organ can't be replaced this way and diseases like dementia stay as they are. The treatment always works.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <graphicData>
+      <texPath>Things/Item/InternalRepairSerum</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.65</drawSize>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>10</stackLimit>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Mass>0.2</Mass>
+      <DeteriorationRate>2.0</DeteriorationRate>
+      <Flammability>0.2</Flammability>
+      <MarketValue>900</MarketValue>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>ZZRH_Serums</li>
+    </thingCategories>
+    <tradeability>All</tradeability>
+    <modExtensions>
+      <li Class="RimHealthSerums.SerumExtension">
+        <shipChance>0.1</shipChance>
+        <caravanChance>0.05</caravanChance>
+        <prosthesesChance>0.35</prosthesesChance>
+        <summary>Heals the scars on one organ, the brain included.</summary>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ZZRH_ScarSerum</defName>
+    <label>scar serum</label>
+    <description>A RimHealth mechanite serum for old wounds on the outside of the body. A doctor injects it and picks one scarred body part that isn't an organ, like an arm, a leg, the torso or the ribs. The mechanites smooth out every scar on that part over one to two days, so the old pain goes away. Ritual scars are healed as well. Organs need the internal repair serum instead. When the work is done the body absorbs the mechanites.\n\nThe patient can't walk during the treatment. It always works.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <graphicData>
+      <texPath>Things/Item/ScarSerum</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.65</drawSize>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>10</stackLimit>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Mass>0.2</Mass>
+      <DeteriorationRate>2.0</DeteriorationRate>
+      <Flammability>0.2</Flammability>
+      <MarketValue>400</MarketValue>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>ZZRH_Serums</li>
+    </thingCategories>
+    <tradeability>All</tradeability>
+    <modExtensions>
+      <li Class="RimHealthSerums.SerumExtension">
+        <shipChance>0.25</shipChance>
+        <caravanChance>0.15</caravanChance>
+        <prosthesesChance>0.5</prosthesesChance>
+        <summary>Heals the scars on one body part that isn't an organ.</summary>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ZZRH_MechaniteFlushSerum</defName>
+    <label>mechanite flush</label>
+    <description>A RimHealth serum of hunter mechanites. They track down fibrous and sensory mechanites and break them apart. The fight causes a fever for one to two days and the patient can't walk in that time. Afterwards the body absorbs what is left. The treatment always works.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <graphicData>
+      <texPath>Things/Item/MechaniteFlushSerum</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.65</drawSize>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>10</stackLimit>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Mass>0.2</Mass>
+      <DeteriorationRate>2.0</DeteriorationRate>
+      <Flammability>0.2</Flammability>
+      <MarketValue>350</MarketValue>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>ZZRH_Serums</li>
+    </thingCategories>
+    <tradeability>All</tradeability>
+    <modExtensions>
+      <li Class="RimHealthSerums.SerumExtension">
+        <shipChance>0.2</shipChance>
+        <caravanChance>0.1</caravanChance>
+        <prosthesesChance>0.25</prosthesesChance>
+        <summary>Clears fibrous and sensory mechanites.</summary>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ZZRH_WithdrawalSerum</defName>
+    <label>withdrawal serum</label>
+    <description>A RimHealth mechanite serum against drug addiction. The mechanites rewire the brain's reward system and clear out every addiction and tolerance. Luciferium is the one exception because the body needs it too much. Instead of weeks of withdrawal the patient spends three to four days in bed. Afterwards the body absorbs the mechanites. The treatment always works.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <graphicData>
+      <texPath>Things/Item/WithdrawalSerum</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.65</drawSize>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>10</stackLimit>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Mass>0.2</Mass>
+      <DeteriorationRate>2.0</DeteriorationRate>
+      <Flammability>0.2</Flammability>
+      <MarketValue>400</MarketValue>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>ZZRH_Serums</li>
+    </thingCategories>
+    <tradeability>All</tradeability>
+    <modExtensions>
+      <li Class="RimHealthSerums.SerumExtension">
+        <shipChance>0.2</shipChance>
+        <caravanChance>0.1</caravanChance>
+        <prosthesesChance>0.25</prosthesesChance>
+        <summary>Ends every drug addiction except luciferium.</summary>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ZZRH_GeriatricSerum</defName>
+    <label>geriatric serum</label>
+    <description>A RimHealth mechanite serum against the illnesses of old age. Each dose cures one chronic condition and goes for the most dangerous one first. Artery blockage comes before Alzheimer's, then dementia, frailty, bad back, asthma, cataracts and hearing loss. The treatment takes four to six days in bed. Afterwards the body absorbs the mechanites. It always works, but it doesn't make anyone younger.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <graphicData>
+      <texPath>Things/Item/GeriatricSerum</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.65</drawSize>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>10</stackLimit>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Mass>0.2</Mass>
+      <DeteriorationRate>2.0</DeteriorationRate>
+      <Flammability>0.2</Flammability>
+      <MarketValue>1000</MarketValue>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>ZZRH_Serums</li>
+    </thingCategories>
+    <tradeability>All</tradeability>
+    <modExtensions>
+      <li Class="RimHealthSerums.SerumExtension">
+        <shipChance>0.1</shipChance>
+        <caravanChance>0.05</caravanChance>
+        <prosthesesChance>0.25</prosthesesChance>
+        <summary>Cures one chronic illness of old age.</summary>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ZZRH_ImmunityBooster</defName>
+    <label>immunity booster</label>
+    <description>A RimHealth autoinjector that pushes the immune system hard for five days. Immunity against infections, flu and plague builds up half again as fast. It makes most people a bit sick to the stomach. Anyone can inject it themselves. A doctor can also give it through the Operations list.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <graphicData>
+      <texPath>Things/Item/ImmunityBooster</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.65</drawSize>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>10</stackLimit>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Mass>0.2</Mass>
+      <DeteriorationRate>2.0</DeteriorationRate>
+      <Flammability>0.2</Flammability>
+      <MarketValue>250</MarketValue>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>ZZRH_Serums</li>
+    </thingCategories>
+    <tradeability>All</tradeability>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Inject {0_label}</useLabel>
+        <useDuration>120</useDuration>
+      </li>
+      <li Class="CompProperties_UseEffectAddHediff">
+        <compClass>RimHealthSerums.CompUseEffect_SerumHediff</compClass>
+        <hediffDef>ZZRH_ImmunityBooster_Boost</hediffDef>
+      </li>
+      <li Class="CompProperties_UseEffectPlaySound">
+        <soundOnUsed>MechSerumUsed</soundOnUsed>
+      </li>
+      <li Class="CompProperties_UseEffectDestroySelf" />
+    </comps>
+    <modExtensions>
+      <li Class="RimHealthSerums.SerumExtension">
+        <shipChance>0.25</shipChance>
+        <caravanChance>0.15</caravanChance>
+        <prosthesesChance>0.5</prosthesesChance>
+        <summary>Faster immunity against infections for five days.</summary>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ZZRH_RejuvenationSerum</defName>
+    <label>rejuvenation serum</label>
+    <description>RimHealth's rarest serum. Its mechanites renew cells all over the body and turn back the biological clock by three to eight years. It never takes anyone below 18. The year range and the age limit can be changed in the mod settings. The treatment takes about a week in bed and hurts. Afterwards the body absorbs the mechanites. It always works.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <graphicData>
+      <texPath>Things/Item/RejuvenationSerum</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.65</drawSize>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>10</stackLimit>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Mass>0.2</Mass>
+      <DeteriorationRate>2.0</DeteriorationRate>
+      <Flammability>0.2</Flammability>
+      <MarketValue>2500</MarketValue>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>ZZRH_Serums</li>
+    </thingCategories>
+    <tradeability>All</tradeability>
+    <modExtensions>
+      <li Class="RimHealthSerums.SerumExtension">
+        <shipChance>0.05</shipChance>
+        <caravanChance>0.0</caravanChance>
+        <prosthesesChance>0.1</prosthesesChance>
+        <summary>Takes three to eight years off the biological age.</summary>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>ZZRH_RegrowthSerum_Regrowing</defName>
+    <label>regrowing</label>
+    <description>Mechanites from a regrowth serum are rebuilding a lost body part. It hurts a lot and the patient can't walk until they are done. Afterwards the body absorbs them.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.6, 0.9, 0.6)</defaultLabelColor>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <initialSeverity>0.001</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDayRange>0.334~0.5</severityPerDayRange>
+      </li>
+      <li Class="RimHealthSerums.HediffCompProperties_SerumTreatment">
+        <kind>Regrow</kind>
+        <finishedMessage>{0}'s {1} has grown back.</finishedMessage>
+        <serum>ZZRH_RegrowthSerum</serum>
+        <aftereffects>
+          <li>
+            <hediff>ZZRH_MechaniteItch</hediff>
+          </li>
+          <li>
+            <hediff>ZZRH_MechaniteCravings</hediff>
+          </li>
+          <li>
+            <hediff>ZZRH_MechaniteResidue</hediff>
+            <weight>0.3</weight>
+          </li>
+        </aftereffects>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>early</label>
+        <painOffset>0.5</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.1</setMax>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>0.8</postFactor>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.25</minSeverity>
+        <label>growing</label>
+        <painOffset>0.35</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.1</setMax>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>0.9</postFactor>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.75</minSeverity>
+        <label>almost done</label>
+        <painOffset>0.2</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.1</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>ZZRH_InternalRepairSerum_Repairing</defName>
+    <label>internal repair</label>
+    <description>Mechanites from an internal repair serum are rebuilding scarred or damaged tissue in an organ. The patient can't walk until they are done. Afterwards the body absorbs them.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.6, 0.9, 0.6)</defaultLabelColor>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <initialSeverity>0.001</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDayRange>0.1667~0.25</severityPerDayRange>
+      </li>
+      <li Class="RimHealthSerums.HediffCompProperties_SerumTreatment">
+        <kind>HealScars</kind>
+        <finishedMessage>{0}'s {1} has been repaired.</finishedMessage>
+        <cures>
+          <li>ChemicalDamageModerate</li>
+          <li>ChemicalDamageSevere</li>
+          <li>Cirrhosis</li>
+        </cures>
+        <serum>ZZRH_InternalRepairSerum</serum>
+        <aftereffects>
+          <li>
+            <hediff>ZZRH_MechaniteItch</hediff>
+          </li>
+          <li>
+            <hediff>ZZRH_MechaniteHeadache</hediff>
+          </li>
+          <li>
+            <hediff>ZZRH_MechaniteResidue</hediff>
+            <weight>0.3</weight>
+          </li>
+        </aftereffects>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>early</label>
+        <painOffset>0.3</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.1</setMax>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>0.9</postFactor>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.25</minSeverity>
+        <label>repairing</label>
+        <painOffset>0.2</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.1</setMax>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.75</minSeverity>
+        <label>almost done</label>
+        <painOffset>0.1</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.1</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>ZZRH_InternalRepairSerum_RepairingBrain</defName>
+    <label>brain repair</label>
+    <description>Mechanites from an internal repair serum are rebuilding scarred or damaged tissue in the brain. The patient stays unconscious until they are done. Afterwards the body absorbs them.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.6, 0.9, 0.6)</defaultLabelColor>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <initialSeverity>0.001</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDayRange>0.1667~0.25</severityPerDayRange>
+      </li>
+      <li Class="RimHealthSerums.HediffCompProperties_SerumTreatment">
+        <kind>HealScars</kind>
+        <finishedMessage>{0}'s {1} has been repaired.</finishedMessage>
+        <cures>
+          <li>ChemicalDamageModerate</li>
+          <li>ChemicalDamageSevere</li>
+          <li>Cirrhosis</li>
+        </cures>
+        <serum>ZZRH_InternalRepairSerum</serum>
+        <aftereffects>
+          <li>
+            <hediff>ZZRH_MechaniteItch</hediff>
+          </li>
+          <li>
+            <hediff>ZZRH_MechaniteHeadache</hediff>
+          </li>
+          <li>
+            <thoughts>
+              <li>ZZRH_StrangeDreamsGood</li>
+              <li>ZZRH_StrangeDreamsBad</li>
+            </thoughts>
+          </li>
+          <li>
+            <hediff>ZZRH_MechaniteResidue</hediff>
+            <weight>0.3</weight>
+          </li>
+        </aftereffects>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>early</label>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.1</setMax>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.1</setMax>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.25</minSeverity>
+        <label>repairing</label>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.1</setMax>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.1</setMax>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.75</minSeverity>
+        <label>almost done</label>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.1</setMax>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.1</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>ZZRH_ScarSerum_Repairing</defName>
+    <label>scar repair</label>
+    <description>Mechanites from a scar serum are smoothing out old scars. The patient can't walk until they are done. Afterwards the body absorbs them.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.6, 0.9, 0.6)</defaultLabelColor>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <initialSeverity>0.001</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDayRange>0.5~1.0</severityPerDayRange>
+      </li>
+      <li Class="RimHealthSerums.HediffCompProperties_SerumTreatment">
+        <kind>HealScars</kind>
+        <finishedMessage>The scars on {0}'s {1} are gone.</finishedMessage>
+        <serum>ZZRH_ScarSerum</serum>
+        <aftereffects>
+          <li>
+            <hediff>ZZRH_MechaniteItch</hediff>
+          </li>
+          <li>
+            <hediff>ZZRH_MechaniteFatigue</hediff>
+          </li>
+          <li>
+            <hediff>ZZRH_MechaniteResidue</hediff>
+            <weight>0.3</weight>
+          </li>
+        </aftereffects>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>early</label>
+        <painOffset>0.35</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.1</setMax>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.4</minSeverity>
+        <label>repairing</label>
+        <painOffset>0.2</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.1</setMax>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.8</minSeverity>
+        <label>almost done</label>
+        <painOffset>0.1</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.1</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>ZZRH_MechaniteFlushSerum_Flushing</defName>
+    <label>mechanite flush</label>
+    <description>Hunter mechanites are breaking down harmful mechanites. It causes a fever and the patient can't walk until they are done.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.6, 0.9, 0.6)</defaultLabelColor>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <initialSeverity>0.001</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDayRange>0.5~1.0</severityPerDayRange>
+      </li>
+      <li Class="RimHealthSerums.HediffCompProperties_SerumTreatment">
+        <kind>CureHediffs</kind>
+        <finishedMessage>{0} is free of harmful mechanites.</finishedMessage>
+        <cures>
+          <li>FibrousMechanites</li>
+          <li>SensoryMechanites</li>
+        </cures>
+        <serum>ZZRH_MechaniteFlushSerum</serum>
+        <aftereffects>
+          <li>
+            <hediff>ZZRH_MechaniteItch</hediff>
+          </li>
+          <li>
+            <hediff>ZZRH_MechaniteHeadache</hediff>
+          </li>
+        </aftereffects>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>fever</label>
+        <painOffset>0.15</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.1</setMax>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>0.85</postFactor>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.6</minSeverity>
+        <label>fading fever</label>
+        <painOffset>0.1</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.1</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>ZZRH_WithdrawalSerum_Detox</defName>
+    <label>mechanite detox</label>
+    <description>Mechanites from a withdrawal serum are clearing out drug addictions. The patient feels sick and can't walk until they are done.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.6, 0.9, 0.6)</defaultLabelColor>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <initialSeverity>0.001</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDayRange>0.25~0.334</severityPerDayRange>
+      </li>
+      <li Class="RimHealthSerums.HediffCompProperties_SerumTreatment">
+        <kind>CureAddictions</kind>
+        <finishedMessage>{0} is no longer addicted.</finishedMessage>
+        <excludedChemicals>
+          <li>Luciferium</li>
+        </excludedChemicals>
+        <serum>ZZRH_WithdrawalSerum</serum>
+        <aftereffects>
+          <li>
+            <hediff>ZZRH_MechaniteItch</hediff>
+          </li>
+          <li>
+            <hediff>ZZRH_MechaniteHeadache</hediff>
+          </li>
+          <li>
+            <thoughts>
+              <li>ZZRH_StrangeDreamsGood</li>
+              <li>ZZRH_StrangeDreamsBad</li>
+            </thoughts>
+          </li>
+          <li>
+            <hediff>ZZRH_MechaniteResidue</hediff>
+            <weight>0.3</weight>
+          </li>
+        </aftereffects>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>early</label>
+        <painOffset>0.3</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.1</setMax>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>0.75</postFactor>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.4</minSeverity>
+        <label>detox</label>
+        <painOffset>0.2</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.1</setMax>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>0.85</postFactor>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.8</minSeverity>
+        <label>almost done</label>
+        <painOffset>0.1</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.1</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>ZZRH_GeriatricSerum_Treating</defName>
+    <label>geriatric treatment</label>
+    <description>Mechanites from a geriatric serum are curing a chronic illness. The patient can't walk until they are done.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.6, 0.9, 0.6)</defaultLabelColor>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <initialSeverity>0.001</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDayRange>0.1667~0.25</severityPerDayRange>
+      </li>
+      <li Class="RimHealthSerums.HediffCompProperties_SerumTreatment">
+        <kind>CureChronic</kind>
+        <finishedMessage>{0} no longer has {1}.</finishedMessage>
+        <cures>
+          <li>HeartArteryBlockage</li>
+          <li>Alzheimers</li>
+          <li>Dementia</li>
+          <li>Frail</li>
+          <li>BadBack</li>
+          <li>Asthma</li>
+          <li>Cataract</li>
+          <li>HearingLoss</li>
+        </cures>
+        <serum>ZZRH_GeriatricSerum</serum>
+        <aftereffects>
+          <li>
+            <hediff>ZZRH_MechaniteItch</hediff>
+          </li>
+          <li>
+            <hediff>ZZRH_MechaniteHeadache</hediff>
+          </li>
+          <li>
+            <hediff>ZZRH_MechaniteResidue</hediff>
+            <weight>0.3</weight>
+          </li>
+        </aftereffects>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>early</label>
+        <painOffset>0.15</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.1</setMax>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>0.9</postFactor>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.3</minSeverity>
+        <label>treating</label>
+        <painOffset>0.1</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.1</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>ZZRH_RejuvenationSerum_Renewing</defName>
+    <label>cell renewal</label>
+    <description>Mechanites from a rejuvenation serum are renewing the body's cells. The patient can't walk until they are done.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.6, 0.9, 0.6)</defaultLabelColor>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <initialSeverity>0.001</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDayRange>0.143~0.143</severityPerDayRange>
+      </li>
+      <li Class="RimHealthSerums.HediffCompProperties_SerumTreatment">
+        <kind>Rejuvenate</kind>
+        <finishedMessage>{0} is biologically {1} younger.</finishedMessage>
+        <yearsRange>3~8</yearsRange>
+        <serum>ZZRH_RejuvenationSerum</serum>
+        <aftereffects>
+          <li>
+            <hediff>ZZRH_MechaniteItch</hediff>
+          </li>
+          <li>
+            <hediff>ZZRH_MechaniteFatigue</hediff>
+          </li>
+          <li>
+            <hediff>ZZRH_MechaniteResidue</hediff>
+            <weight>0.3</weight>
+          </li>
+          <li>
+            <hediff>ZZRH_MechaniteGreying</hediff>
+            <weight>0.6</weight>
+          </li>
+        </aftereffects>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>early</label>
+        <painOffset>0.25</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.1</setMax>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>0.9</postFactor>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.3</minSeverity>
+        <label>renewing</label>
+        <painOffset>0.15</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.1</setMax>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.8</minSeverity>
+        <label>almost done</label>
+        <painOffset>0.1</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.1</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>ZZRH_ImmunityBooster_Boost</defName>
+    <label>immunity boost</label>
+    <description>An immunity booster is pushing the immune system. Immunity against infections builds up half again as fast. It upsets the stomach a bit.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.6, 0.9, 0.6)</defaultLabelColor>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>300000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <vomitMtbDays>4</vomitMtbDays>
+        <statFactors>
+          <ImmunityGainSpeed>1.5</ImmunityGainSpeed>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>ZZRH_MechaniteItch</defName>
+    <label>mechanite itch</label>
+    <description>Leftover mechanites are leaving the body through the skin. The skin itches until they are gone.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>true</isBad>
+    <deprioritizeHealing>true</deprioritizeHealing>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>120000~180000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>ZZRH_MechaniteHeadache</defName>
+    <label>mechanite headache</label>
+    <description>The mechanites left a dull headache behind. It fades after a day or two.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>true</isBad>
+    <deprioritizeHealing>true</deprioritizeHealing>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>60000~120000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <painOffset>0.1</painOffset>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>ZZRH_MechaniteFatigue</defName>
+    <label>mechanite fatigue</label>
+    <description>The treatment wore the body out. Sleep is needed more often for a few days.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>true</isBad>
+    <deprioritizeHealing>true</deprioritizeHealing>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>120000~180000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <restFallFactor>1.3</restFallFactor>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>ZZRH_MechaniteCravings</defName>
+    <label>cravings</label>
+    <description>The body is restocking what the mechanites used up. Hunger comes back much faster for a while.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>true</isBad>
+    <deprioritizeHealing>true</deprioritizeHealing>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>60000~120000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <hungerRateFactor>1.4</hungerRateFactor>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>ZZRH_MechaniteResidue</defName>
+    <label>mechanite residue</label>
+    <description>A few mechanites stayed behind in the nerves. They hurt a little and sharpen the senses until the body breaks them down.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>true</isBad>
+    <deprioritizeHealing>true</deprioritizeHealing>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>180000~300000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <painOffset>0.1</painOffset>
+        <capMods>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>0.1</offset>
+          </li>
+          <li>
+            <capacity>Hearing</capacity>
+            <offset>0.1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>ZZRH_MechaniteGreying</defName>
+    <label>grey hair</label>
+    <description>Mechanites bleached the hair grey. The natural color slowly comes back over the following days.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>true</isBad>
+    <deprioritizeHealing>true</deprioritizeHealing>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>480000~720000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+      <li Class="RimHealthSerums.HediffCompProperties_GreyHair" />
+    </comps>
+    <stages>
+      <li>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>ZZRH_MechaniteItchThought</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>ZZRH_MechaniteItch</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>mechanite itch</label>
+        <description>My skin won't stop itching.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>ZZRH_StrangeDreamsGood</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>2</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>strange dreams</label>
+        <description>I dreamed of glowing machines rebuilding a whole city. Oddly calming.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>ZZRH_StrangeDreamsBad</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>2</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>strange dreams</label>
+        <description>I dreamed tiny machines were crawling under my skin.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <RecipeDef>
+    <defName>ZZRH_AdministerRegrowthSerum</defName>
+    <label>administer regrowth serum</label>
+    <description>Inject a regrowth serum so this body part grows back over two to three days.</description>
+    <workerClass>RimHealthSerums.Recipe_AdministerSerum</workerClass>
+    <jobString>Administering regrowth serum.</jobString>
+    <targetsBodyPart>true</targetsBodyPart>
+    <anesthetize>false</anesthetize>
+    <workAmount>600</workAmount>
+    <dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+    <workSkill>Medicine</workSkill>
+    <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>Human</li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
+    </recipeUsers>
+    <appliedOnFixedBodyParts>
+      <li>Nose</li>
+      <li>Ear</li>
+      <li>Finger</li>
+      <li>Toe</li>
+    </appliedOnFixedBodyParts>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ZZRH_RegrowthSerum</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ZZRH_RegrowthSerum</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <modExtensions>
+      <li Class="RimHealthSerums.SerumRecipeExtension">
+        <treatment>ZZRH_RegrowthSerum_Regrowing</treatment>
+      </li>
+    </modExtensions>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ZZRH_AdministerInternalRepairSerum</defName>
+    <label>administer internal repair serum</label>
+    <description>Inject an internal repair serum so the scars and drug damage in this organ heal over four to six days.</description>
+    <workerClass>RimHealthSerums.Recipe_AdministerSerum</workerClass>
+    <jobString>Administering internal repair serum.</jobString>
+    <targetsBodyPart>true</targetsBodyPart>
+    <anesthetize>false</anesthetize>
+    <workAmount>600</workAmount>
+    <dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+    <workSkill>Medicine</workSkill>
+    <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>Human</li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
+    </recipeUsers>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+      <li>Heart</li>
+      <li>Lung</li>
+      <li>Kidney</li>
+      <li>Liver</li>
+      <li>Stomach</li>
+      <li>Spine</li>
+    </appliedOnFixedBodyParts>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ZZRH_InternalRepairSerum</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ZZRH_InternalRepairSerum</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <modExtensions>
+      <li Class="RimHealthSerums.SerumRecipeExtension">
+        <treatment>ZZRH_InternalRepairSerum_Repairing</treatment>
+        <brainTreatment>ZZRH_InternalRepairSerum_RepairingBrain</brainTreatment>
+        <brainPart>Brain</brainPart>
+      </li>
+    </modExtensions>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ZZRH_AdministerScarSerum</defName>
+    <label>administer scar serum</label>
+    <description>Inject a scar serum so the scars on this body part heal over one to two days.</description>
+    <workerClass>RimHealthSerums.Recipe_AdministerSerum</workerClass>
+    <jobString>Administering scar serum.</jobString>
+    <targetsBodyPart>true</targetsBodyPart>
+    <anesthetize>false</anesthetize>
+    <workAmount>600</workAmount>
+    <dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+    <workSkill>Medicine</workSkill>
+    <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>Human</li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ZZRH_ScarSerum</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ZZRH_ScarSerum</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <modExtensions>
+      <li Class="RimHealthSerums.SerumRecipeExtension">
+        <treatment>ZZRH_ScarSerum_Repairing</treatment>
+        <excludedParts>
+          <li>Brain</li>
+          <li>Heart</li>
+          <li>Lung</li>
+          <li>Kidney</li>
+          <li>Liver</li>
+          <li>Stomach</li>
+          <li>Spine</li>
+        </excludedParts>
+      </li>
+    </modExtensions>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ZZRH_AdministerMechaniteFlushSerum</defName>
+    <label>administer mechanite flush</label>
+    <description>Inject a mechanite flush to clear fibrous and sensory mechanites over one to two days.</description>
+    <workerClass>RimHealthSerums.Recipe_AdministerSerum</workerClass>
+    <jobString>Administering mechanite flush.</jobString>
+    <targetsBodyPart>false</targetsBodyPart>
+    <anesthetize>false</anesthetize>
+    <workAmount>600</workAmount>
+    <dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+    <workSkill>Medicine</workSkill>
+    <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>Human</li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ZZRH_MechaniteFlushSerum</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ZZRH_MechaniteFlushSerum</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <modExtensions>
+      <li Class="RimHealthSerums.SerumRecipeExtension">
+        <treatment>ZZRH_MechaniteFlushSerum_Flushing</treatment>
+      </li>
+    </modExtensions>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ZZRH_AdministerWithdrawalSerum</defName>
+    <label>administer withdrawal serum</label>
+    <description>Inject a withdrawal serum to clear all drug addictions except luciferium over three to four days.</description>
+    <workerClass>RimHealthSerums.Recipe_AdministerSerum</workerClass>
+    <jobString>Administering withdrawal serum.</jobString>
+    <targetsBodyPart>false</targetsBodyPart>
+    <anesthetize>false</anesthetize>
+    <workAmount>600</workAmount>
+    <dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+    <workSkill>Medicine</workSkill>
+    <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>Human</li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ZZRH_WithdrawalSerum</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ZZRH_WithdrawalSerum</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <modExtensions>
+      <li Class="RimHealthSerums.SerumRecipeExtension">
+        <treatment>ZZRH_WithdrawalSerum_Detox</treatment>
+      </li>
+    </modExtensions>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ZZRH_AdministerGeriatricSerum</defName>
+    <label>administer geriatric serum</label>
+    <description>Inject a geriatric serum to cure the worst chronic illness of old age over four to six days.</description>
+    <workerClass>RimHealthSerums.Recipe_AdministerSerum</workerClass>
+    <jobString>Administering geriatric serum.</jobString>
+    <targetsBodyPart>false</targetsBodyPart>
+    <anesthetize>false</anesthetize>
+    <workAmount>600</workAmount>
+    <dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+    <workSkill>Medicine</workSkill>
+    <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>Human</li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ZZRH_GeriatricSerum</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ZZRH_GeriatricSerum</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <modExtensions>
+      <li Class="RimHealthSerums.SerumRecipeExtension">
+        <treatment>ZZRH_GeriatricSerum_Treating</treatment>
+      </li>
+    </modExtensions>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ZZRH_AdministerImmunityBooster</defName>
+    <label>inject immunity booster</label>
+    <description>Inject an immunity booster.</description>
+    <workerClass>RimHealthSerums.Recipe_AdministerUsableSerum</workerClass>
+    <jobString>Administering immunity booster.</jobString>
+    <targetsBodyPart>false</targetsBodyPart>
+    <anesthetize>false</anesthetize>
+    <workAmount>600</workAmount>
+    <dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+    <workSkill>Medicine</workSkill>
+    <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>Human</li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ZZRH_ImmunityBooster</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ZZRH_ImmunityBooster</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ZZRH_AdministerRejuvenationSerum</defName>
+    <label>administer rejuvenation serum</label>
+    <description>Inject a rejuvenation serum to turn back the patient's biological age by three to eight years over about a week.</description>
+    <workerClass>RimHealthSerums.Recipe_AdministerSerum</workerClass>
+    <jobString>Administering rejuvenation serum.</jobString>
+    <targetsBodyPart>false</targetsBodyPart>
+    <anesthetize>false</anesthetize>
+    <workAmount>600</workAmount>
+    <dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+    <workSkill>Medicine</workSkill>
+    <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>Human</li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ZZRH_RejuvenationSerum</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ZZRH_RejuvenationSerum</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <modExtensions>
+      <li Class="RimHealthSerums.SerumRecipeExtension">
+        <treatment>ZZRH_RejuvenationSerum_Renewing</treatment>
+      </li>
+    </modExtensions>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ZZRH_Make_RegrowthSerum</defName>
+    <label>make regrowth serum</label>
+    <description>Make one regrowth serum.</description>
+    <workerClass>RimHealthSerums.RecipeWorker_CraftSerum</workerClass>
+    <jobString>Making regrowth serum.</jobString>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <workSkill>Intellectual</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Drug</soundWorking>
+    <workAmount>3000</workAmount>
+    <recipeUsers>
+      <li>DrugLab</li>
+    </recipeUsers>
+    <researchPrerequisites>
+      <li>MedicineProduction</li>
+    </researchPrerequisites>
+    <skillRequirements>
+      <Intellectual>8</Intellectual>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MedicineIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Neutroamine</li>
+        <li>MedicineIndustrial</li>
+        <li>ComponentSpacer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ZZRH_RegrowthSerum>1</ZZRH_RegrowthSerum>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ZZRH_Make_InternalRepairSerum</defName>
+    <label>make internal repair serum</label>
+    <description>Make one internal repair serum.</description>
+    <workerClass>RimHealthSerums.RecipeWorker_CraftSerum</workerClass>
+    <jobString>Making internal repair serum.</jobString>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <workSkill>Intellectual</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Drug</soundWorking>
+    <workAmount>6000</workAmount>
+    <recipeUsers>
+      <li>DrugLab</li>
+    </recipeUsers>
+    <researchPrerequisites>
+      <li>MedicineProduction</li>
+      <li>Bionics</li>
+    </researchPrerequisites>
+    <skillRequirements>
+      <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MedicineUltratech</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Neutroamine</li>
+        <li>MedicineUltratech</li>
+        <li>ComponentSpacer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ZZRH_InternalRepairSerum>1</ZZRH_InternalRepairSerum>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ZZRH_Make_ScarSerum</defName>
+    <label>make scar serum</label>
+    <description>Make one scar serum.</description>
+    <workerClass>RimHealthSerums.RecipeWorker_CraftSerum</workerClass>
+    <jobString>Making scar serum.</jobString>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <workSkill>Intellectual</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Drug</soundWorking>
+    <workAmount>3000</workAmount>
+    <recipeUsers>
+      <li>DrugLab</li>
+    </recipeUsers>
+    <researchPrerequisites>
+      <li>MedicineProduction</li>
+    </researchPrerequisites>
+    <skillRequirements>
+      <Intellectual>8</Intellectual>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MedicineIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Neutroamine</li>
+        <li>MedicineIndustrial</li>
+        <li>ComponentSpacer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ZZRH_ScarSerum>1</ZZRH_ScarSerum>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ZZRH_Make_MechaniteFlushSerum</defName>
+    <label>make mechanite flush</label>
+    <description>Make one mechanite flush.</description>
+    <workerClass>RimHealthSerums.RecipeWorker_CraftSerum</workerClass>
+    <jobString>Making mechanite flush.</jobString>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <workSkill>Intellectual</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Drug</soundWorking>
+    <workAmount>3000</workAmount>
+    <recipeUsers>
+      <li>DrugLab</li>
+    </recipeUsers>
+    <researchPrerequisites>
+      <li>MedicineProduction</li>
+    </researchPrerequisites>
+    <skillRequirements>
+      <Intellectual>8</Intellectual>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MedicineIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Neutroamine</li>
+        <li>MedicineIndustrial</li>
+        <li>ComponentSpacer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ZZRH_MechaniteFlushSerum>1</ZZRH_MechaniteFlushSerum>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ZZRH_Make_WithdrawalSerum</defName>
+    <label>make withdrawal serum</label>
+    <description>Make one withdrawal serum.</description>
+    <workerClass>RimHealthSerums.RecipeWorker_CraftSerum</workerClass>
+    <jobString>Making withdrawal serum.</jobString>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <workSkill>Intellectual</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Drug</soundWorking>
+    <workAmount>3500</workAmount>
+    <recipeUsers>
+      <li>DrugLab</li>
+    </recipeUsers>
+    <researchPrerequisites>
+      <li>MedicineProduction</li>
+    </researchPrerequisites>
+    <skillRequirements>
+      <Intellectual>8</Intellectual>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MedicineIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Neutroamine</li>
+        <li>MedicineIndustrial</li>
+        <li>ComponentSpacer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ZZRH_WithdrawalSerum>1</ZZRH_WithdrawalSerum>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ZZRH_Make_GeriatricSerum</defName>
+    <label>make geriatric serum</label>
+    <description>Make one geriatric serum.</description>
+    <workerClass>RimHealthSerums.RecipeWorker_CraftSerum</workerClass>
+    <jobString>Making geriatric serum.</jobString>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <workSkill>Intellectual</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Drug</soundWorking>
+    <workAmount>6000</workAmount>
+    <recipeUsers>
+      <li>DrugLab</li>
+    </recipeUsers>
+    <researchPrerequisites>
+      <li>MedicineProduction</li>
+      <li>Bionics</li>
+    </researchPrerequisites>
+    <skillRequirements>
+      <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MedicineUltratech</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Neutroamine</li>
+        <li>MedicineUltratech</li>
+        <li>ComponentSpacer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ZZRH_GeriatricSerum>1</ZZRH_GeriatricSerum>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ZZRH_Make_ImmunityBooster</defName>
+    <label>make immunity booster</label>
+    <description>Make one immunity booster.</description>
+    <workerClass>RimHealthSerums.RecipeWorker_CraftSerum</workerClass>
+    <jobString>Making immunity booster.</jobString>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <workSkill>Intellectual</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Drug</soundWorking>
+    <workAmount>2500</workAmount>
+    <recipeUsers>
+      <li>DrugLab</li>
+    </recipeUsers>
+    <researchPrerequisites>
+      <li>MedicineProduction</li>
+    </researchPrerequisites>
+    <skillRequirements>
+      <Intellectual>6</Intellectual>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MedicineIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Neutroamine</li>
+        <li>MedicineIndustrial</li>
+        <li>ComponentSpacer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ZZRH_ImmunityBooster>1</ZZRH_ImmunityBooster>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ZZRH_Make_RejuvenationSerum</defName>
+    <label>make rejuvenation serum</label>
+    <description>Make one rejuvenation serum.</description>
+    <workerClass>RimHealthSerums.RecipeWorker_CraftSerum</workerClass>
+    <jobString>Making rejuvenation serum.</jobString>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <workSkill>Intellectual</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Drug</soundWorking>
+    <workAmount>9000</workAmount>
+    <recipeUsers>
+      <li>DrugLab</li>
+    </recipeUsers>
+    <researchPrerequisites>
+      <li>MedicineProduction</li>
+      <li>Bionics</li>
+    </researchPrerequisites>
+    <skillRequirements>
+      <Intellectual>15</Intellectual>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>8</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MedicineUltratech</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Neutroamine</li>
+        <li>MedicineUltratech</li>
+        <li>ComponentSpacer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ZZRH_RejuvenationSerum>1</ZZRH_RejuvenationSerum>
+    </products>
+  </RecipeDef>
+
+</Defs>

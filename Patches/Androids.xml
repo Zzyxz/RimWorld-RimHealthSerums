@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/VREAndroids.AndroidSettings[defName="VREA_AndroidSettings"]/disallowedRecipes</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/VREAndroids.AndroidSettings[defName="VREA_AndroidSettings"]/disallowedRecipes</xpath>
+      <value>
+        <li>ZZRH_AdministerRegrowthSerum</li>
+        <li>ZZRH_AdministerInternalRepairSerum</li>
+        <li>ZZRH_AdministerScarSerum</li>
+        <li>ZZRH_AdministerMechaniteFlushSerum</li>
+        <li>ZZRH_AdministerWithdrawalSerum</li>
+        <li>ZZRH_AdministerGeriatricSerum</li>
+        <li>ZZRH_AdministerImmunityBooster</li>
+        <li>ZZRH_AdministerRejuvenationSerum</li>
+      </value>
+    </match>
+  </Operation>
+</Patch>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>RimHealth Serums</name>
+	<author>Zzyxzz</author>
+	<url>https://github.com/Zzyxz/RimWorld-RimHealthSerums</url>
+	<packageId>Zzyxzz.RimHealthSerums</packageId>
+	<modVersion>1.0.0</modVersion>
+	<supportedVersions>
+		<li>1.6</li>
+		<li>1.7</li>
+	</supportedVersions>
+	<description>Mechanite serums from RimHealth for damage that isn't worth a healer mech serum.
+
+A nose shot off, an old scar in the brain, a colonist hooked on yayo. A prosthetic or a long wait covers some of it but it isn't the real thing. These serums sit in between.
+
+- Regrowth serum regrows one nose, ear, finger or toe. Two to three days in bed.
+- Internal repair serum heals every scar on one organ, the brain included, plus drug damage like cirrhosis. Four to six days in bed, unconscious for brain work.
+- Scar serum heals the scars on one body part that isn't an organ, like an arm, a leg or the ribs. Ritual scars go too, since the mechanites can't tell them apart, so colonists whose ideoligion wants scars won't be happy about it. One to two days in bed.
+- Mechanite flush clears fibrous and sensory mechanites. One to two days of fever.
+- Withdrawal serum ends every drug addiction except luciferium. Three to four days in bed.
+- Geriatric serum cures one chronic illness of old age, starting with the worst. Four to six days in bed.
+- Immunity booster is an autoinjector. Immunity builds up half again as fast for five days. Anyone can use it on themselves.
+- Rejuvenation serum takes three to eight years off the biological age, never below 18. Now and then it leaves the hair grey for a week or so before the old color comes back. The range and the age limit can be set in the mod settings. About a week in bed.
+
+A doctor gives the serums through the Operations list in the health tab. It's an injection, not surgery, so it never fails. Other colonists bring food as they would for anyone who is downed, so a colony of one should think twice. Only one treatment can run at a time. If a second one is due early, the serum goes back on the shelf.
+
+When a treatment is done there is a 20 % chance of one mild side effect for a few days. It can be itching, a headache, fatigue, cravings, strange dreams or a bit of mechanite residue in the nerves.
+
+Exotic goods traders sell them now and then. Prosthesis trader ships from Expanded Prosthetics and Organ Engineering carry more and always have regrowth serum. No other trader has them. Every serum can be switched off in the mod settings. The chance for each trader type can be changed there too, as can price, treatment time, pain and side effects. Crafting at the drug lab is off by default and can be turned on.
+
+There are a few known limits. Trauma Team sends a squad when an insured colonist goes down. That includes a serum treatment. Androids from Vanilla Races Expanded can't get the serums.
+
+Safe to add to running saves.
+
+Source code: https://github.com/Zzyxz/RimWorld-RimHealthSerums</description>
+</ModMetaData>
