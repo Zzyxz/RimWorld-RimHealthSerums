@@ -109,6 +109,8 @@ public class RimHealthSettings : ModSettings
 
     public bool devFastTreatments;
 
+    public bool classicGraphics;
+
     private Dictionary<string, SerumConfig> configs = new Dictionary<string, SerumConfig>();
 
     private Dictionary<string, SideEffectConfig> sideEffects = new Dictionary<string, SideEffectConfig>();
@@ -177,6 +179,7 @@ public class RimHealthSettings : ModSettings
     {
         allowCrafting = false;
         devFastTreatments = false;
+        classicGraphics = false;
         configs.Clear();
         sideEffects.Clear();
     }
@@ -185,6 +188,7 @@ public class RimHealthSettings : ModSettings
     {
         Scribe_Values.Look(ref allowCrafting, "allowCrafting", false);
         Scribe_Values.Look(ref devFastTreatments, "devFastTreatments", false);
+        Scribe_Values.Look(ref classicGraphics, "classicGraphics", false);
         Dictionary<string, SerumConfig> changed = configs;
         if (Scribe.mode == LoadSaveMode.Saving)
         {
@@ -255,6 +259,7 @@ public class RimHealthMod : Mod
         AfterEffects.ApplyDurations();
         SerumTuning.RefreshPawns();
         SerumBills.SuspendUnavailable();
+        SerumGraphics.Apply();
     }
 
     public override void DoSettingsWindowContents(Rect inRect)
@@ -265,6 +270,7 @@ public class RimHealthMod : Mod
         Listing_Standard listing = new Listing_Standard { maxOneColumn = true };
         listing.Begin(view);
         listing.CheckboxLabeled("ZZRH_AllowCrafting".Translate(), ref Settings.allowCrafting, "ZZRH_AllowCraftingTip".Translate());
+        listing.CheckboxLabeled("ZZRH_ClassicGraphics".Translate(), ref Settings.classicGraphics, "ZZRH_ClassicGraphicsTip".Translate());
         if (Prefs.DevMode)
         {
             listing.CheckboxLabeled("ZZRH_DevFast".Translate(), ref Settings.devFastTreatments, "ZZRH_DevFastTip".Translate());

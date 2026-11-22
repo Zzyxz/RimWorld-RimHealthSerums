@@ -2,6 +2,8 @@
 <LanguageData>
 	<ZZRH_AllowCrafting>Serums can be made at the drug lab</ZZRH_AllowCrafting>
 	<ZZRH_AllowCraftingTip>Off by default, so traders are the only source. When on, the drug lab gets a bill for every enabled serum. All of them need medicine production, Intellectual skill and advanced components. The stronger ones also need the bionic replacements research.</ZZRH_AllowCraftingTip>
+	<ZZRH_ClassicGraphics>Use the old serum graphics</ZZRH_ClassicGraphics>
+	<ZZRH_ClassicGraphicsTip>Switches all serums back to the original ampoule look. Serums already in your colony change too once you close this window.</ZZRH_ClassicGraphicsTip>
 	<ZZRH_StockChanceIntro>Switch off any serum you don't want in your game. The Settings button next to a serum opens sliders for how often each trader type has it in stock, its price, treatment time, pain, discomfort and the chance of side effects. Other traders never sell the serums.</ZZRH_StockChanceIntro>
 	<ZZRH_SwitchedOff>Switched off. Never offered by traders, made or used in this game.</ZZRH_SwitchedOff>
 	<ZZRH_ShowSettings>Settings</ZZRH_ShowSettings>
